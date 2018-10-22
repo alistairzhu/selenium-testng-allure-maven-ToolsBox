@@ -1,6 +1,6 @@
-package lv.iljapavlovs.testng.constants;
+package com.sample.testng.constants;
 
-import lv.iljapavlovs.testng.utils.ConfigReader;
+import com.sample.testng.utils.ConfigReader;
 
 public class Constants {
     public static final int WAIT_EXPLICIT_SEC = Integer.parseInt(!(System.getProperty("wait.explicit.seconds") == null) ? System.getProperty("wait.explicit.seconds") : ConfigReader.loadProperty("wait.explicit.seconds"));

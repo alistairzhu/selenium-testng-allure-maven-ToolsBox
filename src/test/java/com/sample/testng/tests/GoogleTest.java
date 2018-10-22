@@ -1,6 +1,7 @@
-package lv.iljapavlovs.testng.tests;
+package com.sample.testng.tests;
 
 
+import com.sample.testng.pageobjects.LogInPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -11,20 +12,16 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import io.qameta.allure.TmsLink;
-import lv.iljapavlovs.testng.base.TestBase;
-import lv.iljapavlovs.testng.pageobjects.EnterAccountIdPage;
-import lv.iljapavlovs.testng.pageobjects.GooglePage;
-import lv.iljapavlovs.testng.pageobjects.GoogleSearchResultPage;
-import lv.iljapavlovs.testng.pageobjects.LogInPage;
+import com.sample.testng.base.TestBase;
+import com.sample.testng.pageobjects.EnterAccountIdPage;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static lv.iljapavlovs.testng.core.DriverBase.getDriver;
+import static com.sample.testng.core.DriverBase.getDriver;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
 
 @Epic("Google")

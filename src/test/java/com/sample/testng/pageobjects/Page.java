@@ -1,10 +1,10 @@
-package lv.iljapavlovs.testng.pageobjects;
+package com.sample.testng.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static lv.iljapavlovs.testng.constants.Constants.WAIT_EXPLICIT_SEC;
+import static com.sample.testng.constants.Constants.WAIT_EXPLICIT_SEC;
 
 public class Page {
 

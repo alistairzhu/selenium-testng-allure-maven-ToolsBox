@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.core;
+package com.sample.testng.core;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;

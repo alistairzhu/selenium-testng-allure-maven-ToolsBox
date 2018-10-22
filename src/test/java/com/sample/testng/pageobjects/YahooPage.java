@@ -1,6 +1,6 @@
-package lv.iljapavlovs.testng.pageobjects;
+package com.sample.testng.pageobjects;
 
-import lv.iljapavlovs.testng.core.WebElementHelper;
+import com.sample.testng.core.WebElementHelper;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

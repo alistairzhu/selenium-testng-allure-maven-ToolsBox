@@ -1,6 +1,7 @@
-package lv.iljapavlovs.testng.core;
+package com.sample.testng.core;
 
 
+import com.sample.testng.constants.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -12,8 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static lv.iljapavlovs.testng.constants.Constants.WAIT_EXPLICIT_SEC;
-import static lv.iljapavlovs.testng.core.DriverBase.getDriver;
+import static com.sample.testng.core.DriverBase.getDriver;
 import static org.junit.Assert.fail;
 
 public class WebElementHelper {
@@ -21,7 +21,7 @@ public class WebElementHelper {
     private static final Logger logger = LoggerFactory.getLogger(WebElementHelper.class);
 
     public static boolean isElementDisplayed(WebElement webElement) {
-        return isElementDisplayed(webElement, WAIT_EXPLICIT_SEC);
+        return isElementDisplayed(webElement, Constants.WAIT_EXPLICIT_SEC);
     }
 
     public static boolean isElementDisplayed(WebElement webElement, int timeOut) {
@@ -37,7 +37,7 @@ public class WebElementHelper {
     }
 
     public static void waitForVisibility(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), WAIT_EXPLICIT_SEC);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Constants.WAIT_EXPLICIT_SEC);
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
         } catch (TimeoutException te) {
@@ -53,7 +53,7 @@ public class WebElementHelper {
     }
 
     public static void sendKeys(WebElement webElement, CharSequence... keysToSend) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), WAIT_EXPLICIT_SEC);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Constants.WAIT_EXPLICIT_SEC);
         wait.until(ExpectedConditions.visibilityOf(webElement));
        // webElement.clear();
         webElement.sendKeys(keysToSend);
@@ -75,13 +75,13 @@ public class WebElementHelper {
     }
 
     public static void waitForElementToBeClickable(WebElement webElement) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), WAIT_EXPLICIT_SEC);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Constants.WAIT_EXPLICIT_SEC);
         wait.until(ExpectedConditions.elementToBeClickable(webElement));
 
     }
 
     public static WebElement waitForElementToBeClickable(By webElement) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), WAIT_EXPLICIT_SEC);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Constants.WAIT_EXPLICIT_SEC);
         return wait.until(ExpectedConditions.elementToBeClickable(webElement));
     }
 

@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.utils;
+package com.sample.testng.utils;
 
 import java.io.IOException;
 import java.util.Properties;

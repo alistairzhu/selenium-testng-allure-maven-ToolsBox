@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.utils;
+package com.sample.testng.utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

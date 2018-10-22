@@ -1,22 +1,19 @@
-package lv.iljapavlovs.testng.pageobjects;
+package com.sample.testng.pageobjects;
 
-import lv.iljapavlovs.testng.core.WebElementHelper;
+
+import com.sample.testng.core.WebElementHelper;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class BpmPage extends Page {
+public class GooglePage extends Page {
 
-
-
-
-    @FindBy(how = How.XPATH, using = "//*[@name='q']")
+    @FindBy(xpath = "//*[@id=\'lst-ib\']")
     private WebElement inputField;
 
-    public BpmPage(WebDriver driver) {
+    public GooglePage(WebDriver driver) {
         super(driver);
         wait.until(ExpectedConditions.visibilityOf(inputField));
     }

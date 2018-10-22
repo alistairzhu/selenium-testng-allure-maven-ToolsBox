@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.listeners;
+package com.sample.testng.listeners;
 
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -14,7 +14,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import static lv.iljapavlovs.testng.core.DriverBase.getDriver;
+import static com.sample.testng.core.DriverBase.getDriver;
 
 public class ScreenshotListener extends TestListenerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(ScreenshotListener.class);

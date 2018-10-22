@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.utils;
+package com.sample.testng.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

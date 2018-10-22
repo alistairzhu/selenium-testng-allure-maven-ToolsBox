@@ -1,4 +1,4 @@
-package lv.iljapavlovs.testng.pageobjects;
+package com.sample.testng.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,11 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-public class YahooSearchResultPage extends Page  {
+
+public class GoogleSearchResultPage extends Page {
+
     @FindBy(how = How.CLASS_NAME, using = "g")
     private List<WebElement> searchResultElements;
 
-    public YahooSearchResultPage(WebDriver driver) {
+    public GoogleSearchResultPage(WebDriver driver) {
         super(driver);
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("g")));
     }
@@ -23,5 +25,4 @@ public class YahooSearchResultPage extends Page  {
     }
 
     ;
-
 }

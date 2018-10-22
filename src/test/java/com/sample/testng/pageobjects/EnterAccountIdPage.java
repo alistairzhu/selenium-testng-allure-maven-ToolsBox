@@ -1,6 +1,5 @@
-package lv.iljapavlovs.testng.pageobjects;
-import lv.iljapavlovs.testng.core.WebElementHelper;
-import org.openqa.selenium.Keys;
+package com.sample.testng.pageobjects;
+import com.sample.testng.core.WebElementHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

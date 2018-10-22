@@ -19,6 +19,7 @@ public class FindBrokenLinks {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
+        //WebPage to be tested
         String homePage = "http://www.laserfiche.com";
         String url = "";
         HttpURLConnection huc = null;

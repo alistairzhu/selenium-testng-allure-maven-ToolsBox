@@ -1,1 +1,1 @@
-# selenium-testng-allure-maven-ToolsBox
+Sample code for personal use only
